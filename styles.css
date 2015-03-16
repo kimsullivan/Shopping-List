@@ -1,0 +1,235 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic);
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	height: 100%;
+	background: #67c9c9;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button:focus { 
+    outline: none; 
+}
+
+/*--- List ----*/
+
+.container{
+	width: 600px;
+	margin: 75px auto 20px;
+}
+
+.title{
+	height: 140px;
+	background: url('img/notepad-background.png') no-repeat 0 0;
+	color: #67c9c9;
+	font-size: 60px;
+	text-align: center;
+	line-height: 140px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*---- Clearing Floats ----*/
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}
+
+/*---- form ----*/
+
+.form_wrapper{
+	width: 560px;
+	height: 112px;
+	background: rgba(255, 255, 255, .1);
+	padding: 0 20px;
+}
+
+.form_wrapper input{
+	float: left;
+	background: none;
+	width: 450px;
+	height: 112px;
+	border: none;
+	font-size: 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300px;
+}
+
+.form_wrapper input:focus {
+    outline: 0;
+    color: rgba(255, 255, 255, 1);
+ 
+}
+
+.form_wrapper button{
+	padding: 15px 25px;
+	background: none;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 13px; 
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	font-weight: 700;
+	overflow: visible;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin: 30px auto 0;
+}
+
+.form_wrapper button:hover{
+	background: #fff;
+	color: #67c9c9;
+	transition: .3s ease-in-out;
+}
+
+
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, .4);
+}
+
+:-moz-placeholder {
+   color: rgba(255, 255, 255, .4);
+}
+
+::-moz-placeholder {
+   color: rgba(255, 255, 255, .4);
+}
+
+:-ms-input-placeholder {
+   color: rgba(255, 255, 255, .4);
+}
+
+.items button{
+	cursor: pointer;
+}
+
+
+.line{
+	display: inline-block;
+	width: 580px;
+	height: 80px;
+	background: #5f6767;
+	padding: 0 20px 0 0;
+	margin: 0 0 -2px 0;
+	color: #fff;
+	line-height: 80px;
+	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
+.move:before{
+	content:url('img/dash.png') no-repeat;
+	margin: 0 0 0 -5px;
+}
+
+.move{
+	height: 80px;
+	width: 44px;
+	cursor: pointer;
+	float: left;
+	border: none;
+	background-color: #8f9595;
+	margin: 0 20px 0 0;
+	transition: .2s ease-in-out;
+
+}
+
+.move:hover{
+	background: #7a8080;
+}
+
+.remove:before{
+	content: url('img/x.png') no-repeat;
+	margin: -40px 0px 0px -10px;
+
+}
+
+
+.remove{
+	background: none;
+	float: right;
+	border-radius: 50px;
+	border: transparent;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin: 17px -4px 0 0;
+}
+
+.remove:hover{
+	opacity: .7;
+}
+
+.line p{
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
