@@ -1,14 +1,9 @@
-$(document).ready(function () {
+$(document).ready(function(){
+	$('.add').click(function() {
+		var listItem = $("#list-item").val();
+		$('.items').append("<li class='line'><button class='move'></button><p>" +listItem+ "</p><button class='remove'></button></li>");
+	 });
 
-	// click 
+});
 
-	$('.add').click(function(){
-		$( "input" )
-  			.keyup(function() {
-    		var value = $( this ).val();
-   			 $( "p" ).text( value );
-  })
 
-	}
-
-}
